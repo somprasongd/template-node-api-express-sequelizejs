@@ -2,10 +2,10 @@ version: '3.3'
 
 services:
   node-express:
-  build: .
-  image: docker-node:dev
-  container_name: node-express-dev
-  ports:
-    - 3000:3000
-  volumes:
-    - ./src:/node-app/src
+    build: .
+    image: docker-node:dev
+    container_name: node-express-dev
+    ports:
+      - 3001:3001
+    volumes:
+      - ./src:/node-app/src
